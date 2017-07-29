@@ -1,0 +1,21 @@
+app:
+    name: sst-demo
+    user_cookie: c_user
+
+jwt:
+  header: Authorization
+  expires_in: 600 
+  secret: queenvictoria
+  cookie: AUTH-TOKEN    
+
+spring:
+  jpa:
+    hibernate:
+      # possible values: validate | update | create | create-drop
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:mysql://120.76.245.250:3306/sst-demo
+    username: root
+    password: tsjk@2016
+    driver-class-name: com.mysql.jdbc.Driver  
+    
